@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Spotify</title>
+</head>
+
+<body>
+    <main>
+        <div id="big-container" class="bg-first d-flex">
+            <nav id="sidebar" class="bg-black justify-between d-flex">
+                <section id="side-menu">
+                    <div class="big-logo p-12">
+                        <a href="#"><img src="img/logo-small.svg" alt="Logo Spotify"></a>
+                        <a href="#"><img src="img/logo.svg" alt="Logo Spotify"></a>
+                    </div>
+                    <div class="nav">
+                        <ul>
+                            <li class="p-12">
+                                <a href="#"><img src="img/home.svg" alt="Home"><span class="po-10">Home</span></a>
+                            </li>
+                            <li class="p-12">
+                                <a href="#"><img src="img/search.svg" alt="Search"><span class="po-10">Cerca</span></a>
+                            </li>
+                            <li class="p-12">
+                                <a href="#"><img src="img/libreria.svg" alt="Librery"><span class="po-10">La tua
+                                        libreria</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="playlist pv-20">
+                        <ul>
+                            <li class="p-12">
+                                <h4 class="uppercase">Playlist</h4>
+                            </li>
+                            <li class="new-playlist p-12">
+                                <a href="#">
+                                    <i class="fa-solid fa-square-plus fa- 2x"></i>
+                                    <span class="po-10">Crea Playlist</span>
+                                </a>
+                            </li>
+                            <li class="p-12"><a href="#">Nome Playlist</a></li>
+                            <li class="p-12"><a href="#">Nome Playlist</a></li>
+                            <li class="p-12"><a href="#">Nome Playlist</a></li>
+                            <li class="p-12"><a href="#">Nome Playlist</a></li>
+                            <li class="p-12"><a href="#">Nome Playlist</a></li>
+                            <li class="p-12"><a href="#">Nome Playlist</a></li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="profile-sett">
+                    <div class="install-app txt-center p-12">
+                        <a href="#"><i class="fa-regular fa-circle-down"></i><span class="po-10">Installa app</span></a>
+                    </div>
+                    <div class="profile p-12">
+                        <a class="d-flex align-center" href="#">
+                            <img src="img/profile.svg" alt="John Doe">
+                            <span class="po-10">
+                                <h4>John Doe</h4>
+                            </span>
+                        </a>
+                    </div>
+                </section>
+            </nav>
+            <div id="big-content" class="w-100">
+                <header>
+                    <div id="upgrade" class="align-center p-20 d-flex bg-black">
+                        <a href="#" class="upgrade-btn h-50 uppercase">Upgrade</a>
+                    </div>
+                    <nav id="big-navbar" class="p-12">
+                        <ul class="justify-center d-flex  uppercase">
+                            <li class="p-12"><a href="#">linklink</a></li>
+                            <li class="p-12"><a href="#">link</a></li>
+                            <li class="p-12"><a href="#">linklinklinkl</a></li>
+                            <li class="p-12"><a href="#">linklink</a></li>
+                            <li class="p-12"><a href="#">link</a></li>
+                            <li class="p-12"><a href="#">link</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <div id="content" class="po-10">
+                    <section id="recent-listen" class="pv-20">
+                        <h2>Recently played</h2>
+                        <div class="d-flex pv-10 row">
+                            <figure class="col txt-center pv-10">
+                                <img class="w-100" src="img/metal_lifting.jpg" alt="Metal">
+                                <h3>Heavy Metal</h3>
+                                <h5>Subtitle</h5>
+                            </figure>
+                            <figure class="col txt-center pv-10">
+                                <img class="w-100" src="img/stranger.jpeg" alt="Stranger">
+                                <h3>Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h3>
+                                <h5>Subtitle</h5>
+                            </figure>
+                            <figure class="col txt-center pv-10">
+                                <img class="w-100" src="img/aquietplace.jpeg" alt="A quiet place">
+                                <h3>A quiet place</h3>
+                                <h5>Subtitle</h5>
+                            </figure>
+                            <figure class="col txt-center pv-10">
+                                <img class="w-100" src="img/split.jpeg" alt="Split">
+                                <h3>Split</h3>
+                                <h5>Subtitle</h5>
+                            </figure>
+                            <figure class="col txt-center pv-10">
+                                <img class="w-100" src="img/cure.jpeg" alt="Cure">
+                                <h3>A Cure for wellness</h3>
+                                <h5>Subtitle</h5>
+                            </figure>
+                            <figure class="col txt-center pv-10">
+                                <img class="w-100" src="img/sinister.jpeg" alt="Sinister">
+                                <h3>Sinister</h3>
+                                <h5>Subtitle</h5>
+                            </figure>
+                        </div>
+                    </section>
+                    <section id="suggestions" class="pv-20">
+                        <h2>Creato per John Doe</h2>
+                        <h5>Più ascolti, più accurati saranno i suggerimenti.</h5>
+                        <figure class="col txt-center pv-10">
+                            <img class="w-100" src="img/radar.jpeg" alt="Radar">
+                            <h3>Release Radar</h3>
+                        </figure>
+                    </section>
+
+                </div>
+    </main>
+
+</body>
+
+</html>
