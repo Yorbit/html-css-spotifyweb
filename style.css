@@ -17,6 +17,24 @@
     --third: #ADFF2F;
 }
 
+body {
+    min-width: 480px;
+}
+
+header {
+    padding-top: 100px;
+}
+
+h2,
+h3,
+h4 {
+    color: var(--white);
+}
+
+h5 {
+    font-size: 0.8rem;
+}
+
 .c-white {
     color: var(--white);
 }
@@ -39,6 +57,7 @@
 
 #big-container {
     height: calc(100vh - 100px);
+    overflow-y: auto;
 }
 
 .d-flex {
@@ -86,6 +105,10 @@
     width: 100%;
 }
 
+.h-50 {
+    height: 50%;
+}
+
 .h-100 {
     height: 100%;
 }
@@ -108,20 +131,240 @@
     padding-bottom: 20px;
 }
 
-body {
-    min-width: 480px;
+.radius-50 {
+    border-radius: 50%;
 }
 
-header {
-    padding-top: 100px;
+.rev {
+    flex-direction: row-reverse;
 }
 
-h2,
-h3,
-h4 {
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.row {
+    margin: 0 -12px
+}
+
+.row.col {
+    margin: 0 12px
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+#sidebar {
+    overflow-y: auto;
+    width: 50%;
+}
+
+#side-menu a {
+    display: flex;
+    align-items: center;
+}
+
+#side-menu li:hover * {
     color: var(--white);
 }
 
-h5 {
-    font-size: 0.8rem;
+#side-menu .big-logo a:last-child {
+    display: none;
 }
+
+#side-menu .nav img {
+    height: 40px;
+}
+
+#side-menu .nav span {
+    display: none;
+}
+
+#side-menu .playlist {
+    display: none;
+}
+
+#profile-sett .profile img {
+    background-color: var(--grey);
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+}
+
+#profile-sett span {
+    display: none;
+}
+
+#profile-sett .install-app:hover * {
+    color: white;
+}
+
+#upgrade {
+    height: 100px;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: calc(100% - 50px);
+}
+
+#upgrade .upgrade-btn {
+    padding: 0.6rem 1.7rem;
+    border: 1px solid var(--white);
+    color: var(--white);
+    border-radius: 35px;
+}
+
+#big-navbar li:hover a {
+    color: var(--white);
+}
+
+#upgrade .upgrade-btn:hover {
+    font-size: 1.20rem;
+}
+
+#big-navbar li:first-child::after {
+    content: "";
+    background-color: var(--third);
+    height: 7px;
+    display: inline-block;
+    width: 50%;
+    transform: translateX(50%);
+}
+
+#recentl-listen .col,
+#suggestions .col,
+#popular .col {
+    width: calc(100% / 2 - 30px);
+}
+
+#content .col figure {
+    position: relative;
+}
+
+#content figure .fa-circle-play {
+    display: none;
+}
+
+#content .col figure:hover img {
+    opacity: 0.6;
+}
+
+#content figure:hover .fa-circle-play {
+    display: inline-block;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    position: absolute;
+}
+
+#main-footer {
+    height: 100px;
+}
+
+#now-on {
+    min-width: 180px;
+}
+
+#now-on .album-cover {
+    max-width: 70px;
+}
+
+#now-on .album-cover img {
+    object-fit: contain;
+}
+
+#now-on .track>* {
+    cursor: pointer;
+}
+
+#now-on .track-act a:hover {
+    color: var(--white);
+}
+
+#now-on .track span:hover {
+    text-decoration: underline;
+    color: var(--white);
+}
+
+#controls {
+    max-width: 400px;
+}
+
+#controls .track-btn .fa-circle-play:hover {
+    font-size: 1.2rem;
+}
+
+#controls .anim-bar .bar::before {
+    display: inline-block;
+    background-color: var(--white);
+    content: "";
+    width: 25%;
+    border-radius: 7px;
+    height: 7px;
+    transform: translateY(-9px);
+}
+
+#controls .anim-bar .bar {
+    background-color: var(--grey);
+    height: 7px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+#controls .anim-bar .bar:hover::before {
+    background-color: var(--third);
+}
+
+#controls .anim-bar .bar:hover::after {
+    content: "";
+    background-color: var(--white);
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    transform: translate(-50%, -65%);
+}
+
+#player-controls {
+    min-width: 170px;
+}
+
+#player-controls .volume .bar::before {
+    content: "";
+    display: inline-block;
+    width: 30%;
+    height: 6px;
+    border-radius: 6px;
+    background-color: var(--white);
+    transform: translateY(-10px);
+}
+
+#player-controls .volume .bar {
+    background-color: var(--grey);
+    height: 6px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#player-controls .volume .bar:hover::before {
+    background-color: var(--third);
+}
+
+#player-controls .volume .bar:hover::after {
+    content: "";
+    border-radius: 50%;
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    background-color: var(--white);
+    transform: translate(-50%, -65%);
+}
+
+@media screen and (min-width: 576px) {
+
+    #sidebar {
+        width: 250px;
+        flex-shrink: 0;
+    }

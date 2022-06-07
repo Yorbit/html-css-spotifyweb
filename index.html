@@ -19,7 +19,7 @@
 <body>
     <main>
         <div id="big-container" class="bg-first d-flex">
-            <nav id="sidebar" class="bg-black justify-between d-flex">
+            <nav id="sidebar" class="bg-black justify-between d-flex flex-col">
                 <section id="side-menu">
                     <div class="big-logo p-12">
                         <a href="#"><img src="img/logo-small.svg" alt="Logo Spotify"></a>
@@ -28,7 +28,8 @@
                     <div class="nav">
                         <ul>
                             <li class="p-12">
-                                <a href="#"><img src="img/home.svg" alt="Home"><span class="po-10">Home</span></a>
+                                <a href="#"><img src="img/home.svg" alt="Home"><span
+                                        class="po-10 c-white">Home</span></a>
                             </li>
                             <li class="p-12">
                                 <a href="#"><img src="img/search.svg" alt="Search"><span class="po-10">Cerca</span></a>
@@ -46,7 +47,7 @@
                             </li>
                             <li class="new-playlist p-12">
                                 <a href="#">
-                                    <i class="fa-solid fa-square-plus fa- 2x"></i>
+                                    <i class="fa-solid fa-square-plus fa-2x"></i>
                                     <span class="po-10">Crea Playlist</span>
                                 </a>
                             </li>
@@ -59,13 +60,13 @@
                         </ul>
                     </div>
                 </section>
-                <section id="profile-sett">
-                    <div class="install-app txt-center p-12">
+                <section id="profile-sett" class="po-10">
+                    <div class="install-app txt-center pv-10">
                         <a href="#"><i class="fa-regular fa-circle-down"></i><span class="po-10">Installa app</span></a>
                     </div>
-                    <div class="profile p-12">
+                    <div class="profile pv-10">
                         <a class="d-flex align-center" href="#">
-                            <img src="img/profile.svg" alt="John Doe">
+                            <img class="radius-50" src="img/profile.svg" alt="John Doe">
                             <span class="po-10">
                                 <h4>John Doe</h4>
                             </span>
@@ -75,68 +76,159 @@
             </nav>
             <div id="big-content" class="w-100">
                 <header>
-                    <div id="upgrade" class="align-center p-20 d-flex bg-black">
-                        <a href="#" class="upgrade-btn h-50 uppercase">Upgrade</a>
+                    <div id="upgrade" class="rev align-center p-20 d-flex bg-black">
+                        <a href="#" class="upgrade-btn uppercase">Effettua l'upgrade</a>
                     </div>
                     <nav id="big-navbar" class="p-12">
-                        <ul class="justify-center d-flex  uppercase">
-                            <li class="p-12"><a href="#">linklink</a></li>
-                            <li class="p-12"><a href="#">link</a></li>
-                            <li class="p-12"><a href="#">linklinklinkl</a></li>
-                            <li class="p-12"><a href="#">linklink</a></li>
-                            <li class="p-12"><a href="#">link</a></li>
-                            <li class="p-12"><a href="#">link</a></li>
+                        <ul class="justify-center d-flex uppercase flex-wrap">
+                            <li class="p-12"><a href="#">IN EVIDENZA</a></li>
+                            <li class="p-12"><a href="#">PODCAST</a></li>
+                            <li class="p-12"><a href="#">CLASSIFICHE</a></li>
+                            <li class="p-12"><a href="#">GENERI E MOOD</a></li>
+                            <li class="p-12"><a href="#">NUIOVE USCITE</a></li>
+                            <li class="p-12"><a href="#">SCOPRI</a></li>
                         </ul>
                     </nav>
                 </header>
                 <div id="content" class="po-10">
                     <section id="recent-listen" class="pv-20">
                         <h2>Recently played</h2>
-                        <div class="d-flex pv-10 row">
-                            <figure class="col txt-center pv-10">
-                                <img class="w-100" src="img/metal_lifting.jpg" alt="Metal">
+                        <div class="d-flex pv-10 row flex-wrap">
+                            <div class="col txt-center pv-10">
+                                <figure>
+                                    <img class="w-100" src="img/metal_lifting.jpg" alt="Metal">
+                                    <i class="fa-regular fa-circle-play c-white fa-6x"></i>
+                                </figure>
                                 <h3>Heavy Metal</h3>
                                 <h5>Subtitle</h5>
-                            </figure>
-                            <figure class="col txt-center pv-10">
-                                <img class="w-100" src="img/stranger.jpeg" alt="Stranger">
+                            </div>
+                            <div class="col txt-center pv-10">
+                                <figure>
+                                    <img class="w-100" src="img/stranger.jpeg" alt="Stranger">
+                                    <i class="fa-regular fa-circle-play c-white fa-6x"></i>
+                                </figure>
                                 <h3>Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h3>
-                                <h5>Subtitle</h5>
-                            </figure>
-                            <figure class="col txt-center pv-10">
-                                <img class="w-100" src="img/aquietplace.jpeg" alt="A quiet place">
+                                <h5>Kyle Dixon & Michael Stein</h5>
+                            </div>
+                            <div class="col txt-center pv-10">
+                                <figure>
+                                    <img class="w-100" src="img/aquietplace.jpeg" alt="A quiet place">
+                                    <i class="fa-regular fa-circle-play c-white fa-6x"></i>
+                                </figure>
                                 <h3>A quiet place</h3>
                                 <h5>Subtitle</h5>
-                            </figure>
-                            <figure class="col txt-center pv-10">
-                                <img class="w-100" src="img/split.jpeg" alt="Split">
+                            </div>
+                            <div class="col txt-center pv-10">
+                                <figure>
+                                    <img class="w-100" src="img/split.jpeg" alt="Split">
+                                    <i class="fa-regular fa-circle-play c-white fa-6x"></i>
+                                </figure>
                                 <h3>Split</h3>
                                 <h5>Subtitle</h5>
-                            </figure>
-                            <figure class="col txt-center pv-10">
-                                <img class="w-100" src="img/cure.jpeg" alt="Cure">
+                            </div>
+                            <div class="col txt-center pv-10">
+                                <figure>
+                                    <img class="w-100" src="img/cure.jpeg" alt="Cure">
+                                    <i class="fa-regular fa-circle-play c-white fa-6x"></i>
+                                </figure>
                                 <h3>A Cure for wellness</h3>
                                 <h5>Subtitle</h5>
-                            </figure>
-                            <figure class="col txt-center pv-10">
-                                <img class="w-100" src="img/sinister.jpeg" alt="Sinister">
+                            </div>
+                            <div class="col txt-center pv-10">
+                                <figure class="col txt-center pv-10">
+                                    <img class="w-100" src="img/sinister.jpeg" alt="Sinister">
+                                    <i class="fa-regular fa-circle-play c-white fa-6x"></i>
+                                </figure>
                                 <h3>Sinister</h3>
                                 <h5>Subtitle</h5>
-                            </figure>
+                            </div>
                         </div>
                     </section>
                     <section id="suggestions" class="pv-20">
                         <h2>Creato per John Doe</h2>
                         <h5>Più ascolti, più accurati saranno i suggerimenti.</h5>
-                        <figure class="col txt-center pv-10">
-                            <img class="w-100" src="img/radar.jpeg" alt="Radar">
-                            <h3>Release Radar</h3>
-                        </figure>
+                        <div class=" d-flex flex-wrap pv-10 row">
+                            <div class="col txt-center pv-10">
+                                <figure>
+                                    <img class="w-100" src="img/radar.jpeg" alt="Radar">
+                                    <i class="fa-regular fa-circle-play c-white fa-6x"></i>
+                                </figure>
+                                <h3>Release Radar</h3>
+                            </div>
+                            <div class="col pv-10 txt-center">
+                                <figure>
+                                    <img class="w-100" src="img/mixdaily.jpeg" alt="Daily Mix1">
+                                    <i class="fa-regular fa-circle-play c-white fa-6x"></i>
+                                </figure>
+                                <h3>Daily Mix 1</h3>
+                            </div>
+                        </div>
+                    </section>ù
+                    <section id="popular" class="pv-20">
+                        <h2>Artisti più popolari</h2>
+                        <h5>Più ascolti, più accurati saranno i suggerimenti.</h5>
+                        <div class="d-flex flex-wrap pv-10 row">
+                            <div class="col txt-center pv-10">
+                                <figure>
+                                    <img class="w-100 radius-50" src="img/youg.jpeg" alt="Lana DDel Rey">
+                                    <i class="fa-regular fa-circle-play c-white fa-6x"></i>
+                                </figure>
+                                <h3>Lana Del Rey</h3>
+                            </div>
+                            <div class="col txt-center pv-10">
+                                <figure>
+                                    <img class="w-100 radius-50" src="img/einaudi.jpeg" alt="Ludovico Einaudi">
+                                    <i class="fa-regular fa-circle-play c-white fa-6x"></i>
+                                </figure>
+                                <h3>Ludovico Einaudi</h3>
+                            </div>
+                        </div>
                     </section>
-
                 </div>
+            </div>
+        </div>
     </main>
-
+    <footer id="main-footer" class="bg-second">
+        <section id="player" class="d-flex h-100 p-12 justify-between">
+            <div id="now-on" class="d-flex justify-between align-center">
+                <div class="album-cover txt-center">
+                    <img class="w-100 h-100" src="img/sinister.jpeg" alt="Sinister">
+                </div>
+                <div class="track po-10">
+                    <h3>Sinister</h3>
+                    <span>Brano Nome</span>
+                </div>
+                <div class="track-act h-100 flex-wrap justify-around d-flex align-center flex-col txt-center">
+                    <a href="#" class="po-10 fa-regular fa-heart"></a>
+                    <a href="#" class="po-10 fa-regular fa-folder"></a>
+                </div>
+            </div>
+            <div id="controls" class="flex-col content-center d-flex align-center flex-wrap w-50">
+                <div class="track-btn w-100 d-flex h-50 align-center justify-center">
+                    <a href="#" class="c-white po-10 fa-solid fa-shuffle"></a>
+                    <a href="#" class="c-white po-10 fa-solid fa-backward-step"></a>
+                    <a href="#" class="c-white po-10 fa-solid fa-circle-play"></a>
+                    <a href="#" class="c-white po-10 fa-solid fa-forward-step"></a>
+                    <a href="#" class="c-white po-10 fa-solid fa-rotate-right"></a>
+                </div>
+                <div class="anim-bar w-100 h-50 d-flex justify-between align-center">
+                    <span class="time c-white txt-center po-10">0:25</span>
+                    <div class="w-100 bar"></div>
+                    <span class="total-duration c-white po-10 txt-center">4:35</span>
+                </div>
+            </div>
+            <div id="player-controls" class="justify-between d-flex">
+                <div class="player-btn justify-between d-flex align-center">
+                    <a href="#" class="po-10 c-white fa-solid fa-list"></a>
+                    <a href="#" class="po-10 c-white fa-solid fa-display"></a>
+                </div>
+                <div class="volume w-100 align-center justify-between d-flex">
+                    <a href="#" class="po-10 c-white fa-solid fa-volume-high"></a>
+                    <div class="w-100 bar"></div>
+                </div>
+            </div>
+        </section>
+    </footer>
 </body>
 
 </html>
