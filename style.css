@@ -397,7 +397,7 @@ h5 {
     }
 
     #side-menu .playlist {
-        max-height: 220px;
+        max-height: 450px;
         display: block;
         overflow-y: auto;
     }
@@ -411,6 +411,60 @@ h5 {
         border-bottom: 1px solid var(--grey);
     }
 
+    #now-playing {
+        width: 170px;
+        flex-shrink: 0;
+    }
+
     #upgrade {
         width: calc(100% - 220px);
     }
+
+    #now-on {
+        width: 200px;
+        flex-shrink: 0;
+    }
+
+    #controls a {
+        font-size: 1.7rem;
+    }
+
+    #controls .track-btn .fa-circle-play:hover {
+        font-size: 2rem;
+    }
+
+    #player-controls {
+        width: 200px;
+        flex-shrink: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    #recent-listen .col,
+    #suggestions .col,
+    #now-on .track-act {
+        flex-direction: row;
+    }
+
+    #player #now-on {
+        width: 250px;
+    }
+
+    #player #player-controls {
+        width: 250px;
+    }
+
+    #popular .col {
+        width: calc(100% / 4 - 25px);
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    #suggestions .col,
+    #recent-listen .col,
+    #popular .col {
+        width: calc(100% / 6);
+    }
+}
