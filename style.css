@@ -227,7 +227,7 @@ h5 {
 #big-navbar li:first-child::after {
     content: "";
     background-color: var(--third);
-    height: 7px;
+    height: 6px;
     display: inline-block;
     width: 50%;
     transform: translateX(50%);
@@ -268,7 +268,7 @@ h5 {
 }
 
 #now-on .album-cover {
-    max-width: 70px;
+    max-width: 80px;
 }
 
 #now-on .album-cover img {
@@ -365,6 +365,52 @@ h5 {
 @media screen and (min-width: 576px) {
 
     #sidebar {
-        width: 250px;
+        width: 220px;
         flex-shrink: 0;
+    }
+
+    #side-menu .big-logo a:last-child {
+        display: block;
+    }
+
+    #side-menu .big-logo a:first-child {
+        display: none;
+    }
+
+    #side-menu .big-logo img {
+        height: 60px;
+    }
+
+    #side-menu .nav span,
+    #side-menu .playlist span {
+        display: inline-block;
+    }
+
+    #side-menu li,
+    #profile-sett div {
+        border-right: 4px solid transparent;
+        border-left: 4px solid transparent;
+    }
+
+    #side-menu .nav li:first-child {
+        border-left-color: var(--third);
+    }
+
+    #side-menu .playlist {
+        max-height: 220px;
+        display: block;
+        overflow-y: auto;
+    }
+
+    #profile-sett span {
+        display: inline-block;
+    }
+
+    #profile-sett .install-app {
+        text-align: start;
+        border-bottom: 1px solid var(--grey);
+    }
+
+    #upgrade {
+        width: calc(100% - 220px);
     }
