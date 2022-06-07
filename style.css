@@ -158,6 +158,7 @@ h5 {
 #sidebar {
     overflow-y: auto;
     width: 50%;
+    z-index: 2;
 }
 
 #side-menu a {
@@ -233,7 +234,7 @@ h5 {
     transform: translateX(50%);
 }
 
-#recentl-listen .col,
+#recent-listen .col,
 #suggestions .col,
 #popular .col {
     width: calc(100% / 2 - 30px);
@@ -362,6 +363,22 @@ h5 {
     transform: translate(-50%, -65%);
 }
 
+@media screen and (max-width: 576px) {
+
+    #sidebar {
+        width: 100px;
+        flex-shrink: 0;
+    }
+
+    #content {
+        flex-wrap: nowrap;
+    }
+
+    .volume .bar {
+        display: none;
+    }
+}
+
 @media screen and (min-width: 576px) {
 
     #sidebar {
@@ -429,6 +446,10 @@ h5 {
         font-size: 1.7rem;
     }
 
+    .volume .bar {
+        display: none;
+    }
+
     #controls .track-btn .fa-circle-play:hover {
         font-size: 2rem;
     }
@@ -458,6 +479,11 @@ h5 {
     #popular .col {
         width: calc(100% / 4 - 25px);
     }
+
+    .volume .bar {
+        display: block;
+    }
+
 }
 
 @media screen and (min-width: 992px) {
