@@ -57,7 +57,8 @@ h5 {
 
 #big-container {
     height: calc(100vh - 100px);
-    overflow-y: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .d-flex {
@@ -258,6 +259,10 @@ h5 {
     transform: translate(-50%, -50%);
     left: 50%;
     position: absolute;
+}
+
+#content figure {
+    padding: 10px;
 }
 
 #main-footer {
