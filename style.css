@@ -159,7 +159,9 @@ h5 {
 #sidebar {
     overflow-y: auto;
     width: 50%;
-    z-index: 2;
+    z-index: 3;
+    position: fixed;
+    height: 917px;
 }
 
 #side-menu a {
@@ -207,7 +209,8 @@ h5 {
     z-index: 1;
     position: fixed;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.6);
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
     width: calc(100% - 50px);
 }
 
@@ -239,6 +242,12 @@ h5 {
 #suggestions .col,
 #popular .col {
     width: calc(100% / 2 - 30px);
+}
+
+#recent-listen,
+#suggestions,
+#popular {
+    padding-left: 220px;
 }
 
 #content .col figure {
